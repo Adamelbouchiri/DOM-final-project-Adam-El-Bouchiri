@@ -1,0 +1,93 @@
+.about {
+  padding-block: 80px;
+  text-align: center;
+}
+
+.about .about-header {
+  padding-bottom: 50px;
+}
+
+.about .about-header span {
+  text-transform: uppercase;
+  color: #ccc;
+}
+
+.about .about-header h1 {
+  color: $black-color;
+  font-family: myFont;
+  font-weight: 300;
+}
+
+.about .about-header h1 span {
+  color: $red-color;
+  font-family: myFont;
+}
+
+.about .about-body {
+  display: flex;
+  justify-content: center;
+  padding-inline: 50px;
+  gap: 60px;
+}
+
+.about .about-body .about-left img {
+  width: 800px;
+}
+
+.about .about-body .about-left .book-div {
+  border: 5px solid $black-color;
+  padding: 20px;
+  margin-top: 30px;
+}
+
+.about .about-body .about-left .book-div .number {
+  color: $red-color;
+  padding-top: 10px;
+}
+
+.about .about-body .about-right {
+  width: 500px;
+  text-align: start;
+}
+
+.about .about-body .about-right .first-para {
+  color: #aaa;
+  padding-bottom: 20px;
+}
+
+.about .about-body .about-right p:nth-child(2),
+.about .about-body .about-right p:nth-child(3),
+.about .about-body .about-right p:nth-child(4) {
+  padding-bottom: 10px;
+  line-height: 1.7;
+}
+
+.about .about-body .about-right p span {
+  color: $red-color;
+  font-size: 20px;
+  padding-right: 10px;
+}
+
+.about .about-body .about-right .last-para {
+  padding-top: 20px;
+  padding-bottom: 35px;
+  line-height: 1.7;
+}
+
+.about .about-body .about-right .image-div {
+  position: relative;
+}
+
+.about .about-body .about-right .image-div img {
+  width: 100%;
+}
+
+.about .about-body .about-right .image-div span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 70px;
+  color: $red-color;
+  cursor: pointer;
+}

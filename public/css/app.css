@@ -1,0 +1,83 @@
+@font-face {
+  font-family: myFont;
+  src: url(../../public/font/ShadowsIntoLight-Regular.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  box-shadow: 1px -5px 12px 0px rgba(0, 0, 0, 0.5);
+}
+
+.nav-bar .title {
+  padding-left: 70px;
+  color: #37373f;
+}
+
+.nav-bar .links {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+.nav-bar .links .link {
+  font-size: 17px;
+  position: relative;
+  transition: 0.3s;
+}
+
+.nav-bar .links .link a {
+  color: #aaa;
+  padding-bottom: 5px;
+  transition: 0.3s;
+}
+
+.nav-bar .links .link a:hover {
+  color: #37373f;
+}
+
+.nav-bar .links .link::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0;
+  height: 1.5px;
+  background-color: red;
+  transition: 0.3s;
+  border-radius: 2px;
+}
+
+.nav-bar .links .link:hover::before {
+  width: 100%;
+}
+
+.nav-bar .links .link a.active {
+  color: #37373f;
+  border-bottom: 2px solid red;
+}
+
+.nav-bar .button {
+  padding-right: 80px;
+}
+
+.nav-bar .button a {
+  color: #fff;
+  padding: 10px 25px;
+  border-radius: 20px;
+  background-color: #ce1212;
+}
+
+/*# sourceMappingURL=app.css.map */

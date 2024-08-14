@@ -175,3 +175,40 @@
   color: #aaa;
   line-height: 1.6;
 }
+
+.stats {
+  position: relative;
+  background-image: url(../../../public/images/stats-bg.jpg);
+  background-size: cover;
+  height: 400px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #fff;
+}
+
+.stats::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba($color: #000000, $alpha: .5);
+}
+
+.stats .stat-div {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.stats .stat-div span:first-child {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.stats .stat-div span:last-child {
+  color: #aaa;
+  font-weight: bold;
+}

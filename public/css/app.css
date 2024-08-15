@@ -72,6 +72,7 @@
 
 .nav-bar .button {
   padding-right: 80px;
+  position: relative;
 }
 
 .nav-bar .button a {
@@ -79,6 +80,42 @@
   padding: 10px 25px;
   border-radius: 20px;
   background-color: #ce1212;
+}
+
+.nav-bar .button .my-modal {
+  display: none;
+  position: absolute;
+  width: 300px;
+  height: 200px;
+  padding: 20px;
+  top: 40px;
+  right: 30px;
+  border: 2px solid #ce1212;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.nav-bar .button .my-modal.active {
+  display: block;
+}
+
+.nav-bar .button .my-modal input {
+  padding: 10px;
+  width: 100%;
+  outline: none;
+  border: 1px solid #aaa;
+  margin-bottom: 20px;
+}
+
+.nav-bar .button .my-modal button {
+  display: inline-block;
+  padding: 8px 15px;
+  background-color: #ce1212;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
 }
 
 .landing-page {
@@ -471,6 +508,72 @@
   color: #ce1212;
   font-size: 25px;
   font-weight: bold;
+}
+
+.testimonials {
+  padding-block: 60px;
+  text-align: center;
+  background-color: #f2f2f2;
+}
+
+.testimonials .testimonials-header {
+  padding-bottom: 50px;
+}
+
+.testimonials .testimonials-header span {
+  text-transform: uppercase;
+  color: #ccc;
+}
+
+.testimonials .testimonials-header h1 {
+  color: #37373f;
+  font-family: myFont;
+  font-weight: 300;
+}
+
+.testimonials .testimonials-header h1 span {
+  color: #ce1212;
+  font-family: myFont;
+}
+
+.testimonials .testimonials-body {
+  display: flex;
+  justify-content: center;
+}
+
+.testimonials .testimonials-body .person-info {
+  width: 700px;
+  text-align: start;
+}
+
+.testimonials .testimonials-body .person-info q {
+  display: block;
+  padding-bottom: 30px;
+}
+
+.testimonials .testimonials-body .person-info span {
+  display: block;
+  margin-bottom: 7px;
+}
+
+.testimonials .testimonials-body .person-info .name {
+  color: #37373f;
+  font-family: myFont;
+  font-size: 18px;
+}
+
+.testimonials .testimonials-body .person-info .job {
+  color: #ccc;
+  font-family: myFont;
+}
+
+.testimonials .testimonials-body .person-info .rating {
+  color: rgb(239, 209, 14);
+}
+
+.testimonials .testimonials-body img {
+  width: 200px;
+  border-radius: 50%;
 }
 
 /*# sourceMappingURL=app.css.map */

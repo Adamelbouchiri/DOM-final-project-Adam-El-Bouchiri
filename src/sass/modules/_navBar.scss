@@ -68,6 +68,7 @@
 
 .nav-bar .button {
   padding-right: 80px;
+  position: relative;
 }
 
 .nav-bar .button a {
@@ -75,4 +76,40 @@
   padding: 10px 25px;
   border-radius: 20px;
   background-color: $red-color;
+}
+
+.nav-bar .button .my-modal {
+  display: none;
+  position: absolute;
+  width: 300px;
+  height: 200px;
+  padding: 20px;
+  top: 40px;
+  right: 30px;
+  border: 2px solid $red-color;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.nav-bar .button .my-modal.active {
+  display: block;
+}
+
+.nav-bar .button .my-modal input {
+  padding: 10px;
+  width: 100%;
+  outline: none;
+  border: 1px solid #aaa;
+  margin-bottom: 20px;
+}
+
+.nav-bar .button .my-modal button {
+  display: inline-block;
+  padding: 8px 15px;
+  background-color: $red-color;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
 }

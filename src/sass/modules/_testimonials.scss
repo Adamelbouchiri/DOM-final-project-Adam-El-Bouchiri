@@ -1,0 +1,69 @@
+.testimonials {
+  padding-block: 60px;
+  text-align: center;
+  background-color: #f2f2f2;
+}
+
+.testimonials .testimonials-header {
+  padding-bottom: 50px;
+}
+
+.testimonials .testimonials-header span {
+  text-transform: uppercase;
+  color: #ccc;
+}
+
+.testimonials .testimonials-header h1 {
+  color: $black-color;
+  font-family: myFont;
+  font-weight: 300;
+}
+
+.testimonials .testimonials-header h1 span {
+  color: $red-color;
+  font-family: myFont;
+}
+
+.testimonials .testimonials-body {
+  display: flex;
+  justify-content: center;
+}
+
+.testimonials .testimonials-body .person-info {
+  width: 700px;
+  text-align: start;
+}
+
+.testimonials .testimonials-body .person-info q {
+  display: block;
+  padding-bottom: 30px;
+}
+
+.testimonials .testimonials-body .person-info span {
+  display: block;
+  margin-bottom: 7px;
+}
+
+.testimonials .testimonials-body .person-info .name {
+  color: $black-color;
+  font-family: myFont;
+  font-size: 18px;
+}
+
+.testimonials .testimonials-body .person-info .job {
+  color: #ccc;
+  font-family: myFont;
+}
+
+.testimonials .testimonials-body .person-info .rating {
+  color: rgb(239, 209, 14);
+}
+
+.testimonials .testimonials-body img {
+  width: 200px;
+  border-radius: 50%;
+}
+
+.card {
+  
+}

@@ -179,6 +179,39 @@
   animation: upDown 3s infinite;
 }
 
+.first-video-div {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.first-video-div.hide {
+  display: none;
+}
+
+.first-video-div span {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  padding: 5px;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.first-video-div video {
+  width: 900px;
+  border-radius: 5px;
+}
+
 @keyframes upDown {
   0% {
     transform: translateY(0px);

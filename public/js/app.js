@@ -29,3 +29,16 @@ modalShowBtn.addEventListener("click", () => {
 modalCloseBtn.addEventListener("click", () => {
   modal.classList.remove("active");
 });
+
+let firstVid = document.querySelector(".first-video-div");
+let firstVidClose = document.querySelector(".first-video-div span");
+let firstVidOpen = document.querySelector(".watch-vid")
+
+firstVidOpen.addEventListener("click", () => {
+  firstVid.classList.remove("hide")
+})
+
+firstVidClose.addEventListener("click", () => {
+  firstVid.classList.add("hide")
+})
+

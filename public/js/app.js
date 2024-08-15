@@ -1,3 +1,14 @@
+const navLinks = document.querySelectorAll(".nav-bar .links .link a")
+
+navLinks.forEach(link => {
+  link.addEventListener("click", ()=> {
+    navLinks.forEach(ele => {
+      ele.classList.remove("active")
+    })
+    link.classList.add("active")
+  })
+})
+
 const menuTitles = document.querySelectorAll(".pageTitles .title");
 const menuDivs = document.querySelectorAll(".ourMenu-body");
 

@@ -80,6 +80,7 @@
   padding: 10px 25px;
   border-radius: 20px;
   background-color: #ce1212;
+  cursor: pointer;
 }
 
 .nav-bar .button .my-modal {

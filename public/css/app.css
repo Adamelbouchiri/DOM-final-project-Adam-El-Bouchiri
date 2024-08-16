@@ -1,3 +1,4 @@
+@import "../../node_modules/bootstrap/dist/css/bootstrap.css";
 @font-face {
   font-family: myFont;
   src: url(../../public/font/ShadowsIntoLight-Regular.ttf);
@@ -53,9 +54,9 @@
   content: "";
   position: absolute;
   left: 0;
-  bottom: -6px;
+  bottom: -2px;
   width: 0;
-  height: 1.8px;
+  height: 1.5px;
   background-color: red;
   transition: 0.3s;
   border-radius: 2px;
@@ -67,7 +68,7 @@
 
 .nav-bar .links .link a.active {
   color: #37373f;
-  border-bottom: 1.8px solid red;
+  border-bottom: 2px solid red;
 }
 
 .nav-bar .button {
@@ -253,6 +254,7 @@
   display: flex;
   justify-content: center;
   padding-inline: 50px;
+  padding-block: 50px;
   gap: 60px;
 }
 
@@ -718,7 +720,7 @@
 .our-chefs {
   padding-block: 60px;
   text-align: center;
-  background-color: #f2f2f2;
+  background-color: #fff;
 }
 
 .our-chefs .our-chefs-header {
@@ -820,7 +822,7 @@
 }
 
 .book-table {
-  padding-block: 80px;
+  padding-block: 50px;
   padding-inline: 100px;
   text-align: center;
 }
@@ -920,6 +922,107 @@
   font-weight: bold;
   border-radius: 5px;
   cursor: pointer;
+}
+
+.contact {
+  padding-top: 10px;
+  padding-bottom: 50px;
+  text-align: center;
+}
+
+.contact .contact-header {
+  padding-bottom: 50px;
+}
+
+.contact .contact-header span {
+  text-transform: uppercase;
+  color: #ccc;
+}
+
+.contact .contact-header h1 {
+  color: #37373f;
+  font-family: myFont;
+  font-weight: 300;
+}
+
+.contact .contact-header h1 span {
+  color: #ce1212;
+  font-family: myFont;
+}
+
+.contact .contact-info {
+  padding-inline: 70px;
+}
+
+.contact .contact-info .contact-div {
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+.contact .contact-info .contact-div span:nth-child(1) {
+  font-size: 25px;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  color: #fff;
+  background-color: #ce1212;
+}
+
+.contact .contact-info .contact-div .contact-div-inf h3 {
+  color: #37373f;
+}
+
+.contact .form {
+  padding: 30px;
+  width: 1200px;
+  background-color: #fff;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+.contact .form input:nth-child(1),
+.contact .form input:nth-child(2) {
+  width: 49%;
+}
+
+.contact .form input {
+  border: 1px solid #aaa;
+  outline: none;
+  transition: 0.3s;
+}
+
+.contact .form input:focus {
+  border: 1px solid #ce1212;
+}
+
+.contact .form input::placeholder {
+  color: #aaa;
+}
+
+.contact .form textarea {
+  height: 150px;
+  border: 1px solid #aaa;
+  outline: none;
+  transition: 0.3s;
+}
+
+.contact .form textarea:focus {
+  border: 1px solid #ce1212;
+}
+
+.contact .form textarea::placeholder {
+  color: #aaa;
+}
+
+.contact .form .contact-btn {
+  padding: 10px 20px;
+  background-color: #ce1212;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+* {
+  text-decoration: none !important;
 }
 
 /*# sourceMappingURL=app.css.map */

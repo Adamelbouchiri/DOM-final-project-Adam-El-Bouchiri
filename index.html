@@ -15,10 +15,10 @@
     <link rel="icon" href="./public/images/favicon.png" type="image/x-icon" />
   </head>
   <body>
-    <div class="nav-bar">
+    <div class="nav-bar align-items-center">
       <h1 class="title">Yummy.</h1>
 
-      <ul class="links">
+      <ul class="links mb-0">
         <li class="link"><a class="active" href="#home">Home</a></li>
         <li class="link"><a class="" href="#about">About</a></li>
         <li class="link"><a class="" href="#menu">Menu</a></li>
@@ -615,16 +615,21 @@
 
       <div class="book-table-body">
         <div class="image">
-          <img src="./public/images/reservation.jpg" alt="">
+          <img src="./public/images/reservation.jpg" alt="" />
         </div>
         <div class="booking-info">
           <form action="">
-            <input type="text" class="input" placeholder="Your Name">
-            <input type="email" class="input" placeholder="Your Email">
-            <input type="text" class="input" placeholder="Your Number">
-            <input type="date" class="input">
-            <input type="time" class="input">
-            <input type="number" min="0" class="input" placeholder="#Of People">
+            <input type="text" class="input" placeholder="Your Name" />
+            <input type="email" class="input" placeholder="Your Email" />
+            <input type="text" class="input" placeholder="Your Number" />
+            <input type="date" class="input" />
+            <input type="time" class="input" />
+            <input
+              type="number"
+              min="0"
+              class="input"
+              placeholder="#Of People"
+            />
             <textarea placeholder="Message" name="" id=""></textarea>
           </form>
           <button>Book a Table</button>
@@ -632,6 +637,75 @@
       </div>
     </div>
 
+    <div id="contact" class="contact ">
+      <div class="contact-header">
+        <span>Contact</span>
+        <h1>Book Your <span>Stay With Us</span></h1>
+      </div>
+
+      <div class="our-location">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d24194.456274932418!2d-74.008283!3d40.711257!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a22a3bda30d%3A0xb89d1fe6bc499443!2sDowntown%20Conference%20Center!5e0!3m2!1sfr!2sus!4v1723807066962!5m2!1sfr!2sus"
+          width="1350"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+
+      <div class="contact-info d-flex justify-content-center gap-4 pt-5 flex-wrap">
+        <div class="contact-div d-flex bg-white p-4 col-5">
+          <span class="rounded-circle me-4"
+            ><i class="fa-solid fa-location-dot"></i
+          ></span>
+          <div class="contact-div-inf text-start">
+            <h3>Address</h3>
+            <span>A108 Adam Street, New York, NY 535022</span>
+          </div>
+        </div>
+        <div class="contact-div d-flex bg-white p-4 col-5">
+          <span class="rounded-circle me-4"
+            ><i class="fa-solid fa-phone"></i
+          ></span>
+          <div class="contact-div-inf text-start">
+            <h3>Call Us</h3>
+            <span> +1 5589 55488 55</span>
+          </div>
+        </div>
+        <div class="contact-div d-flex bg-white p-4 col-5">
+          <span class="rounded-circle me-4"
+            ><i class="fa-regular fa-envelope"></i
+          ></span>
+          <div class="contact-div-inf text-start">
+            <h3>Email Us</h3>
+            <span>info@example.com</span>
+          </div>
+        </div>
+        <div class="contact-div d-flex bg-white p-4 col-5">
+          <span class="rounded-circle me-4"
+            ><i class="fa-regular fa-clock"></i
+          ></span>
+          <div class="contact-div-inf text-start">
+            <h3>Opening Hours</h3>
+            <span>Mon-Sat: 11AM - 23PM; Sunday: Closed </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="d-flex justify-content-center mt-4">
+        <form class="form d-flex justify-content-center flex-wrap gap-3 ">
+          <input class="p-3" type="text" placeholder="Enter Your Name">
+          <input class="p-3" type="text" placeholder="Enter Your Email">
+          <input class="p-3 col-12" type="text" placeholder="Enter Your Subject">
+          <textarea class="p-3 col-12" placeholder="Message" name="" id=""></textarea>
+          <button class="contact-btn">Send Message</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
     <script src="./public/js/app.js"></script>
   </body>
 </html>

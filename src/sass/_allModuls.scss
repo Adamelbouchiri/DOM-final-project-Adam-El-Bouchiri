@@ -1,3 +1,4 @@
+@import "../../node_modules/bootstrap/dist/css/bootstrap.css";
 @import "./modules/navBar";
 @import "./modules/landing";
 @import "./modules/aboutUs";
@@ -5,3 +6,8 @@
 @import "./modules/testimonials";
 @import "./modules/chefs";
 @import "./modules/bookTable";
+@import "./modules/contact";
+
+* {
+  text-decoration: none !important;
+}

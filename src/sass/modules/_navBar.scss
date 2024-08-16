@@ -49,9 +49,9 @@
   content: "";
   position: absolute;
   left: 0;
-  bottom: -6px;
+  bottom: -2px;
   width: 0;
-  height: 1.8px;
+  height: 1.5px;
   background-color: red;
   transition: 0.3s;
   border-radius: 2px;
@@ -63,7 +63,7 @@
 
 .nav-bar .links .link a.active {
   color: #37373f;
-  border-bottom: 1.8px solid red;
+  border-bottom: 2px solid red;
 }
 
 .nav-bar .button {

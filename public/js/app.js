@@ -1,13 +1,13 @@
-const navLinks = document.querySelectorAll(".nav-bar .links .link a")
+const navLinks = document.querySelectorAll(".nav-bar .links .link a");
 
-navLinks.forEach(link => {
-  link.addEventListener("click", ()=> {
-    navLinks.forEach(ele => {
-      ele.classList.remove("active")
-    })
-    link.classList.add("active")
-  })
-})
+navLinks.forEach((link) => {
+  link.addEventListener("click", () => {
+    navLinks.forEach((ele) => {
+      ele.classList.remove("active");
+    });
+    link.classList.add("active");
+  });
+});
 
 const menuTitles = document.querySelectorAll(".pageTitles .title");
 const menuDivs = document.querySelectorAll(".ourMenu-body");
@@ -154,4 +154,19 @@ containers.forEach((container) => {
     indicatorsGrp.appendChild(indicator);
   });
   indicatorsGrp.querySelector(".indicator").classList.add("activeIndicator");
+});
+
+let upButton = document.querySelector(".up");
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 100) {
+    upButton.style.right = "20px";
+  } else {
+    upButton.style.right = "-80px";
+  }
+});
+upButton.addEventListener("click", () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
 });

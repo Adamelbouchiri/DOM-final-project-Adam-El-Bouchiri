@@ -715,4 +715,107 @@
   color: yellow;
 }
 
+.our-chefs {
+  padding-block: 60px;
+  text-align: center;
+  background-color: #f2f2f2;
+}
+
+.our-chefs .our-chefs-header {
+  padding-bottom: 50px;
+}
+
+.our-chefs .our-chefs-header span {
+  text-transform: uppercase;
+  color: #ccc;
+}
+
+.our-chefs .our-chefs-header h1 {
+  color: #37373f;
+  font-family: myFont;
+  font-weight: 300;
+}
+
+.our-chefs .our-chefs-header h1 span {
+  color: #ce1212;
+  font-family: myFont;
+}
+
+.our-chefs .our-chefs-body {
+  display: flex;
+  justify-content: center;
+  padding: 0 100px;
+  gap: 30px;
+}
+
+.our-chefs .our-chefs-body .chef-div {
+  overflow: hidden;
+  padding-bottom: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+
+.our-chefs .our-chefs-body .chef-div:hover {
+  transform: scale(1.06);
+  z-index: 5;
+}
+
+.our-chefs .our-chefs-body .chef-div .chef-images {
+  position: relative;
+  height: 70%;
+}
+
+.our-chefs .our-chefs-body .chef-div .chef-images .social {
+  position: absolute;
+  top: 20px;
+  right: -40px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 10px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.our-chefs .our-chefs-body .chef-div .chef-images .social span {
+  font-size: 17px;
+  color: #37373f;
+}
+
+.our-chefs .our-chefs-body .chef-div:hover .chef-images .social {
+  right: 20px;
+}
+
+.our-chefs .our-chefs-body .chef-div .chef-images .chef-img {
+  width: 100%;
+  height: 100%;
+}
+
+.our-chefs .our-chefs-body .chef-div .chef-images .shape {
+  position: absolute;
+  bottom: -6px;
+  width: 100%;
+}
+
+.our-chefs .our-chefs-body .chef-div .chef-title {
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+
+.our-chefs .our-chefs-body .chef-div span {
+  color: #aaa;
+  font-size: 15px;
+}
+
+.our-chefs .our-chefs-body .chef-div p {
+  color: #37373f;
+  font-weight: 100;
+  font-size: 15px;
+  line-height: 1.7;
+  padding: 20px;
+}
+
 /*# sourceMappingURL=app.css.map */
